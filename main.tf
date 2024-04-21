@@ -9,7 +9,7 @@ terraform {
       version = "3.6.0"
     }
   }
-  required_version = "~> 1.0"
+  # required_version = "~> 1.0"
 
   backend "remote" {
     organization = "ACG-TFC-AWS"
@@ -22,7 +22,7 @@ terraform {
 
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 
