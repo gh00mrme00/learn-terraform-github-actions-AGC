@@ -12,17 +12,17 @@ terraform {
   required_version = "~> 1.0"
 
   backend "remote" {
-    organization = "ACG-Terraform-Demos78"
+    organization = "ACG-TFC-AWS"
 
     workspaces {
-      name = "demo-github-actions"
+      name = "gh-actions"
     }
   }
 }
 
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 
